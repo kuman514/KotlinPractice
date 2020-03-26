@@ -33,4 +33,14 @@ fun main() {
         null -> println("nothing...")
         else -> println(nullableString)
     }
+
+    // variable branch expressions
+    var greeting: String? = null
+    greeting = "Greetings."
+    //val greetingToPrint = if(greeting != null) greeting else "HI!"
+    val greetingToPrint = when (greeting) {
+        null -> "HI!"
+        else -> greeting
+    }
+    println(greetingToPrint)
 }

@@ -1,5 +1,5 @@
 var n: String = "Top Level Variable"
-val nullableString: String? = null      // Nullable String
+var nullableString: String? = null      // Nullable String
 
 var typeInferenceStr = "Yasuo"          // type inference
 var nullAssign = null                   // nothing type
@@ -21,4 +21,16 @@ fun main() {
 
     //typeInferenceStr = null
     println(typeInferenceStr)
+
+    nullableString = "LLL"
+    if(nullableString != null) {
+        println(nullableString)
+    }
+
+    // using "when" keyword
+    //nullableString = null
+    when(nullableString) {
+        null -> println("nothing...")
+        else -> println(nullableString)
+    }
 }

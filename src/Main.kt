@@ -14,7 +14,15 @@ fun getGreeting(): String? {
 }
  */
 fun getAnotherGreeting(): String = "Hello Kotlin!?"
-fun getAnotherGreeting2(str: String): String = "Hello, $str"        // must specify "name: Type" on parameters
+
+// must specify "name: Type" on parameters
+fun getAnotherGreeting2(str: String): String = "Hello, $str"
+fun sayHello2(itemToGet: String) {
+    //val msg = "Hello, " + itemToGet + "." // "Hello, $itemToGet."
+    val msg = "Hello, $itemToGet."
+    println(msg)
+}
+fun sayHello3(greeting: String, item: String) = println("$greeting $item.")
 
 fun sayHello() : Unit {
     println(getGreeting())
@@ -65,8 +73,11 @@ fun main() {
     println(greetingToPrint)
     // ======================================
 
+    // testing basic functions
     println(getGreeting())
     sayHello()
     println(getAnotherGreeting())
     println(getAnotherGreeting2("greeters."))
+    sayHello2("ParameterName")
+    sayHello3("our baby","koishi")
 }

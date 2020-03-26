@@ -1,6 +1,9 @@
 var n: String = "Top Level Variable"
 val nullableString: String? = null      // Nullable String
 
+var typeInferenceStr = "Yasuo"          // type inference
+var nullAssign = null                   // nothing type
+
 fun main() {
     println("Hello Kotlin")
 
@@ -15,4 +18,7 @@ fun main() {
     //var n: String = "Local Variable"
     n = "Hello kuman514"
     println(n)
+
+    //typeInferenceStr = null
+    println(typeInferenceStr)
 }

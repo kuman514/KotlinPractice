@@ -4,9 +4,29 @@ var nullableString: String? = null      // Nullable String
 var typeInferenceStr = "Yasuo"          // type inference
 var nullAssign = null                   // nothing type
 
-fun main() {
-    println("Hello Kotlin")
+// Basic Functions on Kotlin ============
+fun getGreeting(): String {
+    return "Hello Kotlin!"
+}
+/*
+fun getGreeting(): String? {
+    return null
+}
+ */
+fun getAnotherGreeting(): String = "Hello Kotlin!?"
+fun getAnotherGreeting2(str: String): String = "Hello, $str"        // must specify "name: Type" on parameters
 
+fun sayHello() : Unit {
+    println(getGreeting())
+}
+// ======================================
+
+fun main() {
+    // Print Hello Kotlin ===================
+    println("Hello Kotlin")
+    // ======================================
+
+    // Variables on Kotlin ==================
     var id: String = "513"       // var: variable that can reassign
     val name: String = "kuman"   // val: read only variable
 
@@ -43,4 +63,10 @@ fun main() {
         else -> greeting
     }
     println(greetingToPrint)
+    // ======================================
+
+    println(getGreeting())
+    sayHello()
+    println(getAnotherGreeting())
+    println(getAnotherGreeting2("greeters."))
 }

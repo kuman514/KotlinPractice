@@ -41,6 +41,8 @@ fun sayHello5(greeting: String, vararg itemsToGet: String) {
         println("$greeting, $itemToGet!")
     }
 }
+
+fun greetPerson(greeting: String = "Hello", name: String = "Kotlin") = println("$greeting, $name!")
 // ======================================
 
 fun main() {
@@ -139,5 +141,11 @@ fun main() {
     sayHello5("Hello")                                              // Doesn't have to pass varargs
     sayHello5("Hey", "koishi", "kotlin", "kuman")       // But also can pass multiple arguments
     sayHello5("Hi", *interestingThings)                             // Array to varargs
+
+    greetPerson(name = "kuman", greeting = "kekeke")                        // changing order of the parameters
+    greetPerson()                                                           // can be empty if default argument is defined
+    sayHello5("Hi", *interestingThings)
+    //sayHello5(greeting = "Hi", *interestingThings)
+    sayHello5(greeting = "Hi", itemsToGet = *interestingThings)
     // ======================================
 }

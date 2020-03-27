@@ -142,10 +142,24 @@ fun main() {
     sayHello5("Hey", "koishi", "kotlin", "kuman")       // But also can pass multiple arguments
     sayHello5("Hi", *interestingThings)                             // Array to varargs
 
-    greetPerson(name = "kuman", greeting = "kekeke")                        // changing order of the parameters
-    greetPerson()                                                           // can be empty if default argument is defined
+    greetPerson(name = "kuman", greeting = "kekeke")                         // changing order of the parameters
+    greetPerson()                                                            // can be empty if default argument is defined
     sayHello5("Hi", *interestingThings)
     //sayHello5(greeting = "Hi", *interestingThings)
     sayHello5(greeting = "Hi", itemsToGet = *interestingThings)
+    // ======================================
+
+    // Classes ==============================
+    val person = Person("Richard", "Construction")
+    //val person2 = Person()                                                  // execute secondary constructor after all inits
+    person.firstName                                                          // Direct Access
+    person.lastName                                                           // Direct Access
+    person.nickName = "Yasuo"
+    person.nickName = "Science"
+    println(person.nickName)
+    person.printInfo()
+
+    val person2 = Person()
+    person2.printInfo()
     // ======================================
 }

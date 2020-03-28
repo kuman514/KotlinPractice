@@ -2,7 +2,9 @@ import java.util.*
 
 // enum class
 enum class EntityType {
-    EASY, MEDIUM, HARD
+    EASY, MEDIUM, HARD;
+
+    fun getFormattedName() = name.toLowerCase().capitalize()
 }
 
 // object declaration
@@ -10,11 +12,15 @@ object EntityFactory {
     //fun create() = Entity("514", "kuman")
     fun create(type: EntityType): Entity {
         val id = UUID.randomUUID().toString()
+        val name = type.getFormattedName()
+        /*
         val name = when(type) {
-            EntityType.EASY -> "Easy"
-            EntityType.MEDIUM -> "Medium"
-            EntityType.HARD -> "Hard"
+            //EntityType.EASY -> "Easy"
+            EntityType.EASY -> type.getFormattedName()
+            EntityType.MEDIUM -> type.getFormattedName()
+            EntityType.HARD -> type.getFormattedName()
         }
+        */
 
         return Entity(id, name)
     }

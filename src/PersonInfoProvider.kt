@@ -48,7 +48,17 @@ open class BasicInfoProvider : PersonInfoProvider, SessionInfoProvider {
 
 fun main() {
     //val provider = BasicInfoProvider()
-    val provider = FancyInfoProvider()
+    //val provider = FancyInfoProvider()
+
+    // Creating an anonymous class that has a superclass
+    // Used for Click Listener on Android
+    val provider = object: PersonInfoProvider {
+        override val providerInfo: String
+            get() = "New Info Provider"
+
+        fun getSessionId() = "ID"
+    }
+
     provider.printInfo(Person())
     provider.getSessionId()
 

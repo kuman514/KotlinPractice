@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="976e29e7-7eb3-4c7b-8400-c391d7ec6fa3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/FancyInfoProvider.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PersonInfoProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonInfoProvider.kt" afterDir="false" />
     </list>
@@ -17,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -93,12 +94,20 @@
       <option name="project" value="LOCAL" />
       <updated>1585368838104</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Practicing Interface and &quot;is&quot; and &quot;as&quot;">
+      <created>1585369587448</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585369587448</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Practicing Interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Practicing Interface" />
+    <MESSAGE value="Practicing Interface and &quot;is&quot; and &quot;as&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Practicing Interface and &quot;is&quot; and &quot;as&quot;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="466" y="0" key="#Project_Structure" timestamp="1585368229469">
@@ -109,38 +118,46 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="809" y="233" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1585368290717" />
-    <state x="584" y="0" key="CommitChangelistDialog2" timestamp="1585368836757">
+    <state x="584" y="0" key="CommitChangelistDialog2" timestamp="1585369586228">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="584" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585368836757" />
-    <state width="595" height="163" key="GridCell.Tab.0.bottom" timestamp="1585369508031">
+    <state x="584" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585369586228" />
+    <state width="1222" height="188" key="GridCell.Tab.0.bottom" timestamp="1585377341099">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585369508031" />
+    <state width="1222" height="188" key="GridCell.Tab.0.bottom/0.0.1280.680/0.-900.1600.860@0.0.1280.680" timestamp="1585377341099" />
+    <state width="1222" height="188" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.-900.1600.860@0.0.1280.680" timestamp="1585371099168" />
+    <state width="595" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585370287004" />
     <state width="914" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585286656183" />
-    <state width="595" height="163" key="GridCell.Tab.0.center" timestamp="1585369508031">
+    <state width="1222" height="188" key="GridCell.Tab.0.center" timestamp="1585377341099">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585369508031" />
+    <state width="1222" height="188" key="GridCell.Tab.0.center/0.0.1280.680/0.-900.1600.860@0.0.1280.680" timestamp="1585377341099" />
+    <state width="1222" height="188" key="GridCell.Tab.0.center/0.0.1280.680/1920.-900.1600.860@0.0.1280.680" timestamp="1585371099168" />
+    <state width="595" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585370287004" />
     <state width="914" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585286656182" />
-    <state width="595" height="163" key="GridCell.Tab.0.left" timestamp="1585369508031">
+    <state width="1222" height="188" key="GridCell.Tab.0.left" timestamp="1585377341099">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585369508031" />
+    <state width="1222" height="188" key="GridCell.Tab.0.left/0.0.1280.680/0.-900.1600.860@0.0.1280.680" timestamp="1585377341099" />
+    <state width="1222" height="188" key="GridCell.Tab.0.left/0.0.1280.680/1920.-900.1600.860@0.0.1280.680" timestamp="1585371099168" />
+    <state width="595" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585370287004" />
     <state width="914" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585286656182" />
-    <state width="595" height="163" key="GridCell.Tab.0.right" timestamp="1585369508031">
+    <state width="1222" height="188" key="GridCell.Tab.0.right" timestamp="1585377341099">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585369508031" />
+    <state width="1222" height="188" key="GridCell.Tab.0.right/0.0.1280.680/0.-900.1600.860@0.0.1280.680" timestamp="1585377341099" />
+    <state width="1222" height="188" key="GridCell.Tab.0.right/0.0.1280.680/1920.-900.1600.860@0.0.1280.680" timestamp="1585371099168" />
+    <state width="595" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585370287004" />
     <state width="914" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585286656182" />
     <state x="922" y="165" key="SettingsEditor" timestamp="1585265476371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="922" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585265476371" />
-    <state x="466" y="77" key="Vcs.Push.Dialog.v2" timestamp="1585368841636">
+    <state x="466" y="77" key="Vcs.Push.Dialog.v2" timestamp="1585369589650">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="466" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585368841636" />
+    <state x="466" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585369589650" />
     <state x="657" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1585227482813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -151,7 +168,7 @@
     <state x="1103" y="230" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585231342172" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/KotlinPractice$PersonInfoProviderKt.ic" NAME="PersonInfoProviderKt Coverage Results" MODIFIED="1585369507985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/KotlinPractice$PersonInfoProviderKt.ic" NAME="PersonInfoProviderKt Coverage Results" MODIFIED="1585370286964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/KotlinPractice$MainKt.ic" NAME="MainKt Coverage Results" MODIFIED="1585368384308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

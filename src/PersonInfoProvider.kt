@@ -18,7 +18,9 @@ interface SessionInfoProvider {
 // If a class is abstract, not all functions need to be implemented
 // However, the class can't be instantiated either
 //abstract class BasicInfoProvider : PersonInfoProvider
-class BasicInfoProvider : PersonInfoProvider, SessionInfoProvider {
+
+// To be inherited, superclass need to be "open"
+open class BasicInfoProvider : PersonInfoProvider, SessionInfoProvider {
     override val providerInfo: String
         get() = "Basic Info Provider Override"
 
@@ -30,18 +32,23 @@ class BasicInfoProvider : PersonInfoProvider, SessionInfoProvider {
     }
     */
 
+    // variable to inherit should be "open"
+    //open val sessionIdPrefix = "Session"
+    protected open val sessionIdPrefix = "Session"
+
     override fun printInfo(person: Person) {
         super.printInfo(person)
         println("Another Print Statement")
     }
 
     override fun getSessionId(): String {
-        return "Session ID"
+        return sessionIdPrefix
     }
 }
 
 fun main() {
-    val provider = BasicInfoProvider()
+    //val provider = BasicInfoProvider()
+    val provider = FancyInfoProvider()
     provider.printInfo(Person())
     provider.getSessionId()
 

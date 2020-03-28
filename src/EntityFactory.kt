@@ -1,3 +1,22 @@
+// object declaration
+object EntityFactory {
+    //fun create() = Entity("514", "kuman")
+}
+
+class Entity(val id: String, val name: String) {
+    override fun toString(): String {
+        return "id: $id, name: $name"
+    }
+}
+
+fun main() {
+    val entity = EntityFactory.create()
+    println(entity)
+}
+
+/*
+// Object Companions
+
 interface IdProvider {
     fun getID(): String
 }
@@ -19,3 +38,4 @@ fun main() {
     val entity = Entity.Factory.create()
     Entity.id
 }
+*/

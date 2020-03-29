@@ -37,12 +37,17 @@ sealed class AnotherEntity() {
 }
 
 fun main() {
-    val easyEntity = AnotherEntityFactory.create(AnotherEntityType.EASY)
-    println(easyEntity)
+    val entity: AnotherEntity = AnotherEntityFactory.create(AnotherEntityType.EASY)
+    //val entity: AnotherEntity = AnotherEntityFactory.create(AnotherEntityType.MEDIUM)
+    //val entity: AnotherEntity = AnotherEntityFactory.create(AnotherEntityType.HARD)
+    //val entity: AnotherEntity = AnotherEntityFactory.create(AnotherEntityType.HELP)
 
-    val mediumEntity = AnotherEntityFactory.create(AnotherEntityType.MEDIUM)
-    println(mediumEntity)
+    val msg = when(entity) {
+        AnotherEntity.Help -> "help class"
+        is AnotherEntity.Easy -> "easy class"
+        is AnotherEntity.Medium -> "medium class"
+        is AnotherEntity.Hard -> "hard class"
+    }
 
-    val hardEntity = AnotherEntityFactory.create(AnotherEntityType.HARD)
-    println(hardEntity)
+    println(msg)
 }

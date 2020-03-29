@@ -50,4 +50,20 @@ fun main() {
     }
 
     println(msg)
+
+    // Same Class, Different Values (id)
+    // that's why we use "is"
+    val entity2: AnotherEntity = AnotherEntityFactory.create(AnotherEntityType.EASY)
+
+    // val entity2 = entity.copy()
+    // val entity2 = entity.copy(name = "...")
+
+    // this is data comparison
+    if(entity == entity2) {
+        println("same")
+    } else {
+        println("different")
+    }
+
+    // reference comparison: ===
 }

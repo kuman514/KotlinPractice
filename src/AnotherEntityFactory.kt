@@ -31,10 +31,23 @@ sealed class AnotherEntity() {
         val name = "Help"
     }
 
-    data class Easy(val id: String, val name: String): AnotherEntity()
+    data class Easy(val id: String, val name: String): AnotherEntity() {
+        // ...
+    }
     data class Medium(val id: String, val name: String): AnotherEntity()
     data class Hard(val id: String, val name: String, val multiplier: Float): AnotherEntity()
 }
+
+// class extension ============================
+fun AnotherEntity.Medium.printInfo() {
+    // extension function
+    println("Medium Class: $id")
+}
+
+// extension property
+val AnotherEntity.Medium.info : String
+    get() = "Yasuo is Medium Science"
+// ============================================
 
 fun main() {
     val entity: AnotherEntity = AnotherEntityFactory.create(AnotherEntityType.EASY)
@@ -53,7 +66,7 @@ fun main() {
 
     // Same Class, Different Values (id)
     // that's why we use "is"
-    val entity2: AnotherEntity = AnotherEntityFactory.create(AnotherEntityType.EASY)
+    val entity2: AnotherEntity = AnotherEntityFactory.create(AnotherEntityType.MEDIUM)
 
     // val entity2 = entity.copy()
     // val entity2 = entity.copy(name = "...")
@@ -64,6 +77,12 @@ fun main() {
     } else {
         println("different")
     }
-
+    // class type comparison: is
+    // data value comparison: ==
     // reference comparison: ===
+
+    if(entity2 is AnotherEntity.Medium) {
+        entity2.printInfo()
+        println(entity2.info)
+    }
 }

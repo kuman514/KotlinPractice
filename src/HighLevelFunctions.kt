@@ -38,4 +38,14 @@ fun main() {
     printFilteredStrings(list, null)
     printFilteredStrings(list, predicate)
     printFilteredStrings(list, getPrintPredicate())
+
+    val list2 = listOf("kotlin", null, "java", "c", "javascript", null, "python")
+    list2
+        .filterNotNull()
+        .filter {
+            it.startsWith("j")
+        }
+        .forEach {
+            println(it)
+        }
 }
